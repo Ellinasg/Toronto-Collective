@@ -10,13 +10,10 @@
 body{
 	/*max-width:2560px;
 	min-width: 1024px;*/
-	/*width:100%;*/
+	width:100%;
 }
 
-.wrapper{
-min-width:320px;
-width:100%;
-}
+.wrapper{}
 
 .mobile-menu{
 display: none;}
@@ -424,14 +421,19 @@ iframe{
 /**************S E C T I O N********************************/
 
 #slide{
-	/*height: 100vh;*/
+	
+  background-color: #000000;
 }
 .mainbox{
 	position:relative;
+
 }
 .one_third img{
 	filter: none;
 	-webkit-filter: grayscale(0);
+    max-width: 100%;
+    min-width: 320px;
+     height:100vh;
 }
 .one_third img:hover{
 	filter: grayscale(1);
@@ -594,8 +596,7 @@ iframe{
 
 #hours, #numbers, #quick-links{
 	text-align:center;
-	color: #337ab7;
-}
+	color: #337ab7;}
 	h5 {
 			margin-top:25px;
 			text-align:center;
@@ -807,11 +808,12 @@ box-shadow: -1px 5px 50px 8px rgba(70,121,250,0.25);
 
 
 @media only screen and (max-width:768px){
-	body{min-width:290px;
+	body, .wrapper{min-width:290px;
 		max-width:768px;
 		width:100%;}
 
-header, .banner-inner, #slide, footer{max-width: 100%;}
+header, .banner-inner, #slide, footer{
+	width: 100%;}
 
  #header-img{
  	max-height:-webkit-fill-available;
@@ -883,7 +885,11 @@ iframe{
 }
 /*Section*/
 
-
+/*footer*/
+#hours, #numbers, #quick-links{
+	display: block;
+	justify-content:center;
+	vertical-align: center;}
 
 
 
