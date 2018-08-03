@@ -12,125 +12,82 @@
 <body>
 
 <header>
-	<div class="top-bar">
-		<img src="Images/logo_2.png" alt="Image Not Found">
-	<section id="options">
-
-			<div  class="options-bar">
-
-
-
-
-
-
-			</div>	
-		</section>
-	</div>	
-
-
-<!-- N  A  V    M  E  N  U -->
-
-<div class="mobile-menu">
-<i class="fa fa-bars"></i></div>	
-
-<div id="#top-nav">
-  <ul class="main-menu">
-    <li>
-      <a href="index.html">
-        
-				<i class="fa fa-home"></i>
-				Home
-				
-			</a>
-    </li>
-
-    <!-- About -->
-    <li>
-      <a href="about.html">
-			
-				<i class="fa fa-puzzle-piece"></i>
-				About
-			</a>
-    </li>
-
-    <!-- Shop -->
-
-    <li class="shop">
-
-
-      <a href="#">
-       	
-			<i class="fa fa-tags"></i>Shop
-       		<span class="arrow">▼</span>
-       
-      </a>
-
-      <!-- Shop Dropdown -->
-      <ul id="submenu">
-      	
-      <!-- 	<li>
-      	<img src="Images/products.png" alt="Image Not Found" width="100" height="100">
-      	<img src="Images/products.png" alt="Image Not Found" width="100" height="100">
-      	<img src="Images/products.png" alt="Image Not Found" width="100" height="100">
-      	<img src="Images/products.png" alt="Image Not Found" width="100" height="100">
-      	</li> -->
-     
-        <li>
-        	
-        	<a href="#">Art Supplies |</a></li>
-        <li>
-      
-        	<a href="#">Clothing |</a></li>
-        <li>
-        
-        	<a href="#">Toys |</a></li>
-        <li>
-        	
-        	<a href="#">Books & Magazines |</a></li>
-        <li>
+	<div class="row">
+		<div class="col-md-8"><img id="header-img" class="bounce-in-top" src="Images/logo_2.png" alt="Toronto Collective Logo"></div>	
+		<div class="col-md-4" id="top-right-header">
+			<!-- Search -->
+			<form id="search-area">
+				<input type="search" onfocus="this.value=''" placeholder="Search..." name="search" class="searchbox-input" onkeyup="buttonUp();" required>
+				<button><i class="fa fa-search social-media" aria-hidden="true"></i></button>
+			</form>	
 		
-        	<a href="#">Prints & Artwork </a>
-        	</li> 
+			<!-- LOGIN	 -->
+			<a href="#" id="login">Login |</a>	
+			<div class="login-form">
+			  <div class="login-avatar"><img src="Images/logo_2.png" alt="Image Lost"></div>
+			  <section class="form">
+			    <form>
+			      <div class="input uname">
+			        <input type="text" id="username" placeholder="Username" required>
+			        <i class="fa fa-user lgn-icons"></i>
+			      </div>
+			  
+			       <div class="input pass">
+			        <input type="password" id="password" placeholder="Password" required>
+			         <i class="fa fa-lock lgn-icons"></i>
+			      </div>
+			         
+			         <p class="error-msg">password must contain at least 6 characters</p>
+			         <p class="error-msg1">Username must contain at least 6 characters</p>
+			         <a href="" class="lgn-redirect">Lost your password?</a>
+			       
+			         <div>
+			         <input type="submit" id="login2" value="Log in"/>
+			           <a href="" class="signup-redirect">Dont have an account?</a>
+			        </div>
+			    </form>   
+		  	  </section>
+		  	</div>  
+		
+			<!-- SIGN UP -->
+			<a id="signup" href="#"> Sign up</a>
+			<div class="signup-form">
+			  <section class="form">
+			    <form>
+			    </form>   
+			  </section>
+			</div> 
 
-      
-      </ul>
+			<!-- CART		 -->
+			<a class="user-info" href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>		
+				<form class="cart main">
+				</form>
+				</div>
+		</div>
+	<div class="row" id="nav-section">
+		<div class="mobile-menu clicked"><i class="fa fa-bars"></i></div>	
 
-    </li>
-
-
-    <li>
-      <a href="Contact.html">
-				<i class="fa fa-phone"></i>
-        		Contact
-      </a>
-    </li>
-
-
-    <li>
-      <a href="#">
-       
-				<i class="fa fa-star"></i>
-       			Blog
-					
-      </a>
-    </li>
-
-  </ul>
-</div>
-	<!-- Nav end -->
-
+		<div id="#top-nav">
+			<ul class="main-menu">
+			    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+			    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+			    <li id="shop">
+			    	<a class="nav-link" href="#">Shop<span class="arrow">▼</span></a>
+			      <!-- Shop Dropdown -->
+			      <ul id="submenu">
+			        <li><a href="#">Art Supplies</a></li>
+			        <li><a href="#">Clothing</a></li>
+			        <li><a href="#">Toys</a></li>
+			        <li><a href="#">Books & Magazines</a></li>
+			        <li><a href="#">Prints & Artwork</a></li>
+			      </ul>
+			    </li>
+				<li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+				<li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
+			</ul>
+		</div>
+	</div>
 </header>
-
-<!-- Header end -->
-
-
-
-
-	<!-- *****************INFO**************** -->
-
-
-	
-
 <div id="contact-info">
 	<div id="map">
 
@@ -141,9 +98,7 @@
 	
 
 	</div>
-
 </div>
-
 <div class=" contact-form">
 
 <!-- Contact form -->
@@ -181,45 +136,41 @@
 
 		<p id="success" style="display:none;">
 			Thank you <br> your message has been received</p>
-
-
 </div>
-
 </div>
 <!-- contact form end -->
-
-
-
 		<!-- ***********F O O T E R********* -->
 
 <footer class="footer">
-
-		<!-- <footer></footer> -->
-
-		<div class="info-footer">
-					<div class="hours">
-					<h5>Operating Hours</h5>
-					<p class="days">Monday - Sunday</p>
-					<p class="hours-sub">12:00pm - 8:00pm</p>
-					</div>
-
-					<div class="numbers">
-					<h5>Contact info</h5>
-					<p>416 - 907 - 7007</p>
-					<p>Toronto.collective@gmail.com</p>
-					</div>
-
-					<div class="quick-links">
-					<h5>Quick Links</h5>
-					<p><a href="http://www.carhartt.com">Carhartt</a></p>
-					<p><a href="http://www.montana-cans.com">Montana</a></p>
-					<p><a href="http://www.ironlak.com">Ironlak</a></p>
-					<!-- <p></p> -->
-					</div>
-			</div>
-	</footer>
-	<div class="copyright">	<p>Copyright Ellinas Design. All right reserved. Design by George Ellinas</p>
-			</div>	
+	<div class="row">
+		<div class="col-md-4" id="hours">
+			<h5>Operating Hours</h5>
+			<p class="days">Monday - Sunday</p>
+			<p class="hours-sub">12:00pm - 8:00pm</p>
+		</div>
+		<div class="col-md-4" id="numbers">
+			<h5>Contact info</h5>
+			<p>416 - 907 - 7007</p>
+			<p>Toronto.collective@gmail.com</p>
+		</div>
+		<div class="col-md-4" id="quick-links">
+			<h5>Quick Links</h5>
+			<p><a href="http://www.carhartt.com">Carhartt</a></p>
+			<p><a href="http://www.montana-cans.com">Montana</a></p>
+			<p><a href="http://www.ironlak.com">Ironlak</a></p>
+		</div>
+	</div>
+	<div class="row" id="social-media">
+		<a href="#"> <i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+		<a href="#"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+		<a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+	</div>
+	<div class="row">
+		<div class="col-md-12">
+			<p id="copyright">Powered by <a href="https://www.ellinasdesign.com">Ellinas Design &#169</a>. All right reserved.</p>
+		</div>
+	</div>				
+</footer>
 
 				<!-- Footer end -->
 
