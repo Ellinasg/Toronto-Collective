@@ -6,13 +6,26 @@ $(document).ready(function(){
  var isOpen = false;
   
 
- $(search).on('click', '.fa-search', function(){
- searchInput.slideToggle('fast');
+ // $(search).on('click', '.fa-search', function(){
+ // searchInput.slideToggle('fast');
 
 
- });
+ // });
  
+
 });
+
+// mobile menu
+
+//     var x = document.getElementById(".main-menu");
+//     if (x.className === ".main-menu") {
+//         x.className += " responsive";
+//     } else {
+//         x.className = ".main-menu";
+//     }
+// }
+
+
 
 
 // ************LOGIN FORM**********************
@@ -21,10 +34,6 @@ $(document).ready(function(){
 
 
 // ************Video Mute*********************
-
-
-
-
 
 var loginBox = $('.login-form');
 var username = $('#username').val();
