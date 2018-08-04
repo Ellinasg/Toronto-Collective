@@ -1,0 +1,184 @@
+<!DOCTYPE Html>
+<html>
+<head>
+	<title>Toronto_Collective</title>
+	<meta charset="utf-8">
+	<meta lang="en">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="shortcut icon" type="img/png" href="Images/favicon.png">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">	
+</head>
+<body>
+
+
+
+<header>
+	<div class="row">
+		<div class="col-md-8">
+			<img id="header-img" class="bounce-in-top" src="Images/logo_2.png" alt="Toronto Collective Logo">
+		</div>	
+		<div class="col-md-4" id="top-right-header">
+			<!-- Search -->
+			<form id="search-area">
+				<input type="search" onfocus="this.value=''" placeholder="Search..." name="search" class="searchbox-input" onkeyup="buttonUp();" required>
+				<button><i class="fa fa-search social-media" aria-hidden="true"></i></button>
+			</form>	
+		
+			<!-- LOGIN	 -->
+			<a href="#" id="login">Login |</a>	
+			<div class="login-form">
+			  <div class="login-avatar"><img src="Images/logo_2.png" alt="Image Lost"></div>
+			  <section class="form">
+			    <form>
+			      <div class="input uname">
+			        <input type="text" id="username" placeholder="Username" required>
+			        <i class="fa fa-user lgn-icons"></i>
+			      </div>
+			  
+			       <div class="input pass">
+			        <input type="password" id="password" placeholder="Password" required>
+			         <i class="fa fa-lock lgn-icons"></i>
+			      </div>
+			         
+			         <p class="error-msg">password must contain at least 6 characters</p>
+			         <p class="error-msg1">Username must contain at least 6 characters</p>
+			         <a href="" class="lgn-redirect">Lost your password?</a>
+			       
+			         <div>
+			         <input type="submit" id="login2" value="Log in"/>
+			           <a href="" class="signup-redirect">Dont have an account?</a>
+			        </div>
+			    </form>   
+		  	  </section>
+		  	</div>  
+		
+			<!-- SIGN UP -->
+			<a id="signup" href="#"> Sign up</a>
+			<div class="signup-form">
+			  <section class="form">
+			    <form>
+			    </form>   
+			  </section>
+			</div> 
+
+			<!-- CART		 -->
+			<a class="user-info" href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>		
+				<form class="cart main">
+				</form>
+				</div>
+		</div>
+	<div class="row" id="nav-section">
+		<div id="#top-nav">
+				<label id="mobile-menu" for="toggle">&#9776</label>
+				<input type="checkbox" id="toggle">
+
+			<ul class="main-menu">
+			    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+			    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+			    <li id="shop">
+			    	<a class="nav-link" href="#">Shop<span class="arrow">▼</span></a>
+			      <!-- Shop Dropdown -->
+			      <ul id="submenu">
+			        <li><a href="#">Art Supplies</a></li>
+			        <li><a href="#">Clothing</a></li>
+			        <li><a href="#">Toys</a></li>
+			        <li><a href="#">Books & Magazines</a></li>
+			        <li><a href="#">Prints & Artwork</a></li>
+			      </ul>
+			    </li>
+				<li class="nav-item"><a class="nav-link" href="Contact.html">Contact</a></li>
+				<li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
+			</ul>
+		</div>
+	</div>
+</header>
+<main class="banner-inner row">
+	<!-- V I D E O --> 
+ 	<iframe id="bg" src="https://www.youtube.com/embed/TryxETYjYQQ?mute=1&amp;rel=0&amp;autoplay=1&amp;controls=0&amp;modestbranding=1&amp;disablekb=1&amp;enablejsapi=1&amp;fs=0&amp;showinfo=0" ></iframe>
+</main>
+<section class="row" id="slide">
+
+  <div class="col-md-4 mainbox">
+	<div class="one_third" id="part_one">
+		<img src="Images/apparel.jpg" alt="Image Not Found" class="bounce-top img-section">
+	    <div class="mask">
+		    <h1>Clothing</h1>
+		    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		  	</p>
+		    <button class="info" type="button">View More</button>
+	    </div>
+  </div>
+  
+  </div>
+  <div class="col-md-4 mainbox">
+		<div class="one_third" id="part_two">
+		<img src="Images/Paint_1.jpg" alt="Image Not Found" class="img-section bounce-top" >
+	    <div class="mask">
+	    <h1>Paint</h1>
+	    <p>orem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	    </p>
+	     <button class="info" type="button">View More</button>
+	    </div>
+	  
+		</div>
+  
+  </div>
+  <div class="col-md-4 mainbox">
+		<div class="one_third" id="part_three">
+		<img src="Images/toys02.jpg" alt="Image Not Found" class="img-section bounce-top">
+	    <div class="mask">
+	    <h1>Toys</h1>
+	    <p>orem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	    quis nostrud exercitation ullamco laboris nisi ut aliquip </p>
+	     <button class="info" type="button">View More</button>
+	    </div>
+  
+  </div>
+
+  </div>
+</section>
+<footer class="footer row">
+	<div class="row">
+		<div class="col-md-4" id="hours">
+			<h5>Operating Hours</h5>
+			<p class="days">Monday - Sunday</p>
+			<p class="hours-sub">12:00pm - 8:00pm</p>
+		</div>
+		<div class="col-md-4" id="numbers">
+			<h5>Contact info</h5>
+			<p>416 - 907 - 7007</p>
+			<p>Toronto.collective@gmail.com</p>
+		</div>
+		<div class="col-md-4" id="quick-links">
+			<h5>Quick Links</h5>
+			<p><a href="http://www.carhartt.com">Carhartt</a></p>
+			<p><a href="http://www.montana-cans.com">Montana</a></p>
+			<p><a href="http://www.ironlak.com">Ironlak</a></p>
+		</div>
+	</div>
+	<div class="row" id="social-media">
+		<a href="#"> <i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+		<a href="#"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+		<a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+	</div>
+	<div class="row">
+		<div class="col-md-12">
+			<p id="copyright">Powered by <a href="https://www.ellinasdesign.com">Ellinas Design &#169</a>. All right reserved.</p>
+		</div>
+	</div>				
+</footer>
+
+
+
+	 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script><script src="script.js"></script>
+
+</body>
+</html>
